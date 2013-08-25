@@ -631,7 +631,7 @@
 
 					_instance.stopAnimateTo();
 
-					initialElement = e.target;
+					initialElement = $(e.target);//iOS5 Safari fix
 					initialTouchY = lastTouchY = currentTouchY;
 					initialTouchX = currentTouchX;
 					initialTouchTime = currentTouchTime;
